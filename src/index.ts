@@ -1,15 +1,15 @@
 const testarr = [2, 3, 5, 6, 1, 23, 45, 643, 12, 324];
 
 // Using TS functions
-function sortNumArray(arr: number[]): Array<number> {
+function sortNumArrayTSFunc(arr: number[]): Array<number> {
   return arr.sort((a, b) => a - b);
 }
 
-console.log(sortNumArray(testarr));
+console.log(sortNumArrayTSFunc(testarr));
 
 
 // Bubble sort
-function sortNumArray2(arr: number[]): number[] {
+function bubbleSort(arr: number[]): number[] {
   let sortedArr: number[] = arr; // Copy the array
 
   const swap = (array: number[], firIndex: number, secIndex: number): number[] => {
@@ -30,4 +30,4 @@ function sortNumArray2(arr: number[]): number[] {
   return sortedArr;
 }
 
-console.log(sortNumArray2(testarr))
+console.log(bubbleSort(testarr))
